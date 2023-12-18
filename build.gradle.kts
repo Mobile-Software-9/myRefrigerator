@@ -2,4 +2,9 @@
 plugins {
     id("com.android.application") version "8.1.1" apply false
     id("org.jetbrains.kotlin.android") version "1.9.0" apply false
+//    id ("com.android.library") version "8.1.1" apply false
+    //firebase
+    id("com.google.gms.google-services") version "4.4.0" apply false
+//    id("org.jetbrains.kotlin.kapt") version "1.7.20-Beta"
+//    id("com.google.devtools.ksp") version "1.8.0-1.0.8" apply false
 }
