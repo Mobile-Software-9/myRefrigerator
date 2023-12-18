@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">refrigerator</string>
+    <string name="app_name">Thx_Fridge</string>
 
     <string-array name="vegetables">
         <item>감자</item>
@@ -318,6 +318,5 @@
     <string name="open_drawer">Open Drawer</string>
     <string name="close_drawer">Close Drawer</string>
     <string name="xml">https://openapi.foodsafetykorea.go.kr/api/b60a3afde71f4b8fa5a5/COOKRCP01/xml/1/70</string>
-
 
 </resources>

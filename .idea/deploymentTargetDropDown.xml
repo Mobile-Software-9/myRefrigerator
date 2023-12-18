@@ -7,11 +7,15 @@
         <deviceKey>
           <Key>
             <type value="VIRTUAL_DEVICE_PATH" />
-            <value value="C:\Users\witty\.android\avd\Pixel_5_API_33_2.avd" />
+            <value value="C:\AndroidAVD\Pixel_4_API_30.avd" />
           </Key>
         </deviceKey>
       </Target>
     </targetSelectedWithDropDown>
+<<<<<<< HEAD
     <timeTargetWasSelectedWithDropDown value="2023-12-17T19:47:46.909328200Z" />
+=======
+    <timeTargetWasSelectedWithDropDown value="2023-12-18T14:17:24.658009400Z" />
+>>>>>>> origin/knh
   </component>
 </project>

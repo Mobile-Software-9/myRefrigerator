@@ -8,11 +8,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.refrigerator"
-    compileSdk = 34
+    namespace = "com.example.thx_fridge"
+    compileSdk = 33
 
     defaultConfig {
-        applicationId = "com.example.refrigerator"
+        applicationId = "com.example.thx_fridge"
         minSdk = 24
         targetSdk = 33
         versionCode = 1
@@ -31,13 +31,15 @@ android {
             )
         }
     }
-    compileOptions {  //17로 수정
+
+    compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
     kotlinOptions {
         jvmTarget = "1.8"
     }
+
     buildFeatures{
         viewBinding = true
         dataBinding = true
@@ -59,6 +61,7 @@ dependencies {
     implementation("androidx.drawerlayout:drawerlayout:1.1.1")
     implementation ("com.squareup.picasso:picasso:2.71828")
 
+    implementation("com.naver.maps:map-sdk:3.17.0")
 
     implementation("androidx.core:core-ktx:1.9.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
