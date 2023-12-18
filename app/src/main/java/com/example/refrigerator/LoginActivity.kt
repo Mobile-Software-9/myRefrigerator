@@ -16,6 +16,7 @@ import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.common.SignInButton
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.GoogleAuthProvider
+import issuedeash.MainActivity
 
 //로그인중간에 로딩화면추가
 //디자인바꾸기
@@ -60,8 +61,7 @@ class LoginActivity : AppCompatActivity() {
                     task ->
                 if(task.isSuccessful) {
                     Toast.makeText(this,  "로그인 완료", Toast.LENGTH_LONG).show()
-                    //넘어가는페이지 수정
-                    startActivity(Intent (this,FoodCategoryActivity::class.java))
+                    startActivity(Intent (this, MainActivity::class.java))
                 } else {
                     Toast.makeText(this,  task.exception?.message, Toast.LENGTH_LONG).show()
                 }

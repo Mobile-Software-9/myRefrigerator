@@ -10,6 +10,7 @@ import android.graphics.Color
 import android.os.Build
 import android.util.Log
 import androidx.core.app.NotificationCompat
+import issuedeash.MainActivity
 
 class FoodEndDateReceiver : BroadcastReceiver() {
 
@@ -48,7 +49,7 @@ class FoodEndDateReceiver : BroadcastReceiver() {
     }
 
     private fun deliverNotification(context: Context){
-        val contentIntent = Intent(context, MyFoodInfoActivity::class.java)  //이동할페이지 수정필요
+        val contentIntent = Intent(context, MainActivity::class.java)  //이동할페이지 수정필요
         val contentPendingIntent = PendingIntent.getActivity(
             context,
             NOTIFICATION_ID, // requestCode

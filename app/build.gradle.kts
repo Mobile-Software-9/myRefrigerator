@@ -55,15 +55,10 @@ dependencies {
     implementation(platform("com.google.firebase:firebase-bom:32.6.0"))
     implementation("com.google.firebase:firebase-analytics-ktx")
 
-    // room
-//    implementation ("androidx.room:room-runtime:2.5.1")
-//    kapt("androidx.room:room-compiler:2.5.1")
-//    implementation ("androidx.room:room-ktx:2.5.1")
-//    kapt ("androidx.annotation:annotation:1.0.0")
-//    kapt("org.xerial:sqlite-jdbc:3.44.1.0")
-//    implementation ("org.slf4j:slf4j-simple:1.7.32")
-//    // Coroutine
-//    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.0")
+    //issuedeash
+    implementation("androidx.drawerlayout:drawerlayout:1.1.1")
+    implementation ("com.squareup.picasso:picasso:2.71828")
+
 
     implementation("androidx.core:core-ktx:1.9.0")
     implementation("androidx.appcompat:appcompat:1.6.1")

@@ -20,6 +20,15 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name="issuedeash.RecipeMainActivity"
+            android:exported="false" />
+        <activity
+            android:name="issuedeash.RecipeDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name="issuedeash.MainActivity"
+            android:exported="false" />
+        <activity
             android:name=".AddActivity"
             android:exported="false" />
 

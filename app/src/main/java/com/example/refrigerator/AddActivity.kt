@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import com.example.refrigerator.databinding.ActivityAddBinding
+import issuedeash.MainActivity
 import java.util.Calendar
 
 class AddActivity : AppCompatActivity() {
@@ -87,7 +88,7 @@ class AddActivity : AppCompatActivity() {
                 calendar.timeInMillis,
                 pendingIntent)
 
-            intent = Intent(this, MyFoodInfoActivity::class.java) //메인으로 수정필요
+            intent = Intent(this, MainActivity::class.java) //메인으로 수정필요
             startActivity(intent)
         }
 
