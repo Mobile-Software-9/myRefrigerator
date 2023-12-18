@@ -17,8 +17,6 @@ import com.google.android.gms.common.SignInButton
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.GoogleAuthProvider
 
-//로그인중간에 로딩화면추가
-//디자인바꾸기
 class LoginActivity : AppCompatActivity() {
     lateinit var auth: FirebaseAuth
     lateinit var googleSignInClient: GoogleSignInClient
