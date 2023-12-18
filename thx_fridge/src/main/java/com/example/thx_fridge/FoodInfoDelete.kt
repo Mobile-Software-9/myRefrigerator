@@ -18,13 +18,6 @@ class FoodInfoDelete : AppCompatActivity() {
         //val binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val btnMap: Button =  findViewById(R.id.btnMap);
-
-        btnMap.setOnClickListener {
-                val intent:Intent = Intent(this@FoodInfoDelete, ShoppingList::class.java)
-                startActivity(intent)
-        }
-
     }
 
     fun foodDeleteAlert(view: View) {
