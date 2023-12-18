@@ -1,6 +1,7 @@
 package issuedeash
 
 import android.content.Intent
+import android.graphics.Color
 import android.os.Bundle
 import android.util.Log
 import android.view.Gravity
@@ -15,6 +16,8 @@ import androidx.core.view.isInvisible
 import androidx.core.view.isVisible
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.drawerlayout.widget.DrawerLayout.DrawerListener
+import com.example.refrigerator.AddActivity
+import com.example.refrigerator.FoodCategoryActivity
 import com.example.refrigerator.R
 import com.example.refrigerator.databinding.ActivityMainBinding
 import com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
@@ -37,6 +40,14 @@ class MainActivity : AppCompatActivity() {
         val binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        var where = intent.getStringExtra("where")
+        if (where == "냉동실") {
+            binding.fooditem1.text = intent.getStringExtra("food")
+        }
+        else {
+            binding.fooditem2.text = intent.getStringExtra("food")
+        }
+
         binding.drawer.setDrawerLockMode(DrawerLayout.LOCK_MODE_UNLOCKED);
 
         drawerLayout = findViewById(R.id.drawer)
@@ -50,7 +61,15 @@ class MainActivity : AppCompatActivity() {
         rightDrawerbtn.isVisible = false
         leftDrawerbtn.isVisible = false
 
+        leftDrawerbtn.setOnClickListener{
+            val intent = Intent(this, FoodCategoryActivity::class.java)
+            startActivity(intent)
+        }
 
+        rightDrawerbtn.setOnClickListener{
+            val intent = Intent(this, FoodCategoryActivity::class.java)
+            startActivity(intent)
+        }
 
         binding.recipeButton.setOnClickListener{
             val intent1 = Intent(this, RecipeMainActivity::class.java)

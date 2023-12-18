@@ -89,6 +89,8 @@ class AddActivity : AppCompatActivity() {
                 pendingIntent)
 
             intent = Intent(this, MainActivity::class.java) //메인으로 수정필요
+            intent.putExtra("food",binding.foodname.text.toString())
+            intent.putExtra("where",where)
             startActivity(intent)
         }
 

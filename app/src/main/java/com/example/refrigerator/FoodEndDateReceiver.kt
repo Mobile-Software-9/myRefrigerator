@@ -60,7 +60,7 @@ class FoodEndDateReceiver : BroadcastReceiver() {
         val builder = NotificationCompat.Builder(context, CHANNEL_ID)
             .setSmallIcon(R.drawable.sampleimg) // 아이콘
             .setContentTitle("냉장고를 부탁해") // 제목
-            .setContentText("$food 가 상해가고 있어요!") // 내용
+            .setContentText("$food 이/가 상해가고 있어요!") // 내용
             .setContentIntent(contentPendingIntent)
             .setPriority(NotificationCompat.PRIORITY_HIGH)
             .setAutoCancel(true)
