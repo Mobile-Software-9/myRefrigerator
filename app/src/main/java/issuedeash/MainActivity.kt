@@ -22,6 +22,8 @@ import com.example.refrigerator.R
 import com.example.refrigerator.databinding.ActivityMainBinding
 import com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
 import com.google.android.material.navigation.NavigationView
+import thx_fridge.FoodInfoDeleteActivity
+import thx_fridge.ShoppingListActivity
 
 
 class MainActivity : AppCompatActivity() {
@@ -46,6 +48,10 @@ class MainActivity : AppCompatActivity() {
         }
         else {
             binding.fooditem2.text = intent.getStringExtra("food")
+        }
+        binding.fooditem1.setOnClickListener{
+            val intent = Intent(this, FoodInfoDeleteActivity::class.java)
+            startActivity(intent)
         }
 
         binding.drawer.setDrawerLockMode(DrawerLayout.LOCK_MODE_UNLOCKED);
@@ -77,7 +83,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.listButton.setOnClickListener{
-            val intent2 = Intent(this, RecipeMainActivity::class.java) // 이부분 수정 필요
+            val intent2 = Intent(this, ShoppingListActivity::class.java)
             startActivity(intent2)
         }
 

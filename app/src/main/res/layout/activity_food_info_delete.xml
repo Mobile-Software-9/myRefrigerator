@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="thx_fridge.FoodInfoDeleteActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <ImageView
+            android:background="@drawable/round_background_border"
+            android:id="@+id/food_img"
+            android:layout_width="93dp"
+            android:layout_height="97dp"
+            android:src="@drawable/dumpling"
+            android:padding="3dp"
+            />
+
+        <TextView
+            android:id="@+id/food_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="물만두"
+            android:textSize="25dp"
+            android:layout_gravity="center"
+            android:paddingLeft="20dp"/>
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#000000"/>
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/food_cnt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="개수 : 5개"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/food_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="작성일자"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/food_add_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="date"
+            android:text="2023/12/18"
+            android:textSize="20dp"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:id="@+id/food_exp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="유통기한"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/food_exp_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="date"
+            android:text="2024/12/18"
+            android:textSize="20dp" />
+
+
+    </LinearLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#000000"/>
+
+
+    <Button
+        android:id="@+id/btnAlertDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="foodDeleteAlert"
+        android:text="재료 삭제"
+        android:textSize="20dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="#F4A267"
+        android:textColor="@color/black"/>
+    <!--
+    <Button
+        android:id="@+id/btnMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="지도 이동"
+        android:layout_gravity="end"
+        android:layout_marginRight="20dp"/>
+        -->
+
+
+
+
+</LinearLayout>
