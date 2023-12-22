@@ -1,13 +1,11 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
 
-    <style name="Base.Theme.Thx_Fridge" parent="Theme.Material3.DayNight.NoActionBar">
-
+    <style name="Base.Theme.MyRefrigerator" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
-<<<<<<< HEAD
-    <style name="Theme.Thx_Fridge" parent="Base.Theme.Thx_Fridge" />
+    <style name="Theme.MyRefrigerator" parent="Base.Theme.MyRefrigerator" />
 
 </resources>

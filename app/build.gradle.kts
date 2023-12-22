@@ -2,17 +2,17 @@ plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
     id("com.google.gms.google-services") //firebase
-//    id("com.google.devtools.ksp")
-//    id ("org.jetbrains.kotlin.kapt")
+    id("org.jetbrains.kotlin.kapt")
 
 }
 
+
 android {
-    namespace = "com.example.thx_fridge"
-    compileSdk = 33
+    namespace = "com.example.refrigerator"
+    compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.thx_fridge"
+        applicationId = "com.example.refrigerator"
         minSdk = 24
         targetSdk = 33
         versionCode = 1

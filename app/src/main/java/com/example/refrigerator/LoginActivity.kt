@@ -16,7 +16,7 @@ import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.common.SignInButton
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.GoogleAuthProvider
-import issuedeash.MainActivity
+import com.example.issuedeash.MainActivity
 
 //로그인중간에 로딩화면추가
 //디자인바꾸기

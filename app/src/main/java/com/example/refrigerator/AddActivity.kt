@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import com.example.refrigerator.databinding.ActivityAddBinding
-import issuedeash.MainActivity
+import com.example.thx_fridge.MainActivity
 import java.util.Calendar
 
 class AddActivity : AppCompatActivity() {

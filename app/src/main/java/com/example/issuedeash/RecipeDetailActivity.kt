@@ -1,4 +1,4 @@
-package issuedeash
+package com.example.issuedeash
 
 import android.annotation.SuppressLint
 import android.media.Image

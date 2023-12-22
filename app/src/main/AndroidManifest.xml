@@ -17,35 +17,35 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Thx_Fridge"
+        android:theme="@style/Theme.MyRefrigerator"
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
-            android:name="issuedeash.RecipeMainActivity"
+            android:name="com.example.issuedeash.RecipeMainActivity"
             android:exported="false" />
         <activity
-            android:name="issuedeash.RecipeDetailActivity"
+            android:name="com.example.issuedeash.RecipeDetailActivity"
             android:exported="false" />
         <activity
-            android:name="issuedeash.MainActivity"
+            android:name="com.example.issuedeash.MainActivity"
             android:exported="false" />
         <activity
-            android:name=".AddActivity"
+            android:name="com.example.refrigerator.AddActivity"
             android:exported="false" />
 
         <receiver
-            android:name=".FoodEndDateReceiver"
+            android:name="com.example.refrigerator.FoodEndDateReceiver"
             android:enabled="true"
             android:exported="true" />
 
         <activity
-            android:name=".FoodCategoryActivity"
+            android:name="com.example.refrigerator.FoodCategoryActivity"
             android:exported="false" />
         <activity
-            android:name=".LoginActivity" />
+            android:name="com.example.refrigerator.LoginActivity" />
         <activity
-            android:name=".MainActivity"
-            android:exported="true"/>
+            android:name="com.example.thx_fridge.MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
