@@ -88,18 +88,20 @@
         android:layout_width="match_parent"
         android:layout_height="2dp"
         android:background="@color/black"/>
-    <ImageView
+
+
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@drawable/naver3"/>
+        android:layout_height="0px"
+        android:layout_weight="14">
 
+        <fragment
+            android:id="@+id/map"
+            android:name="com.naver.maps.map.MapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
 
-    <!--            <androidx.fragment.app.FragmentContainerView-->
-    <!--            android:id="@+id/map_fragment"-->
-    <!--            android:name="com.naver.maps.map.MapFragment"-->
-    <!--            android:layout_width="match_parent"-->
-    <!--            android:layout_height="match_parent"-->
-    <!--            />-->
+    </FrameLayout>
 
 
 
